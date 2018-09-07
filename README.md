@@ -10,7 +10,7 @@ non mount (temporary using)
 `docker run -dit --name=webdav -p 8080:80 kxn4t/webdav-docker`  
 
 ## access
-`http://localhost/uploads`
+`http://localhost:8080/uploads`
 
 One person is registered as an initial user.  
 user: admin  
