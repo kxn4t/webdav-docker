@@ -6,6 +6,8 @@ use digest authentication.
 # Usage
 ## run
 `docker run -dit --name=webdav -v <path to location>:/usr/local/apache2/uploads -p 8080:80 kxn4t/webdav-docker`
+non mount (temporary using)
+`docker run -dit --name=webdav -p 8080:80 kxn4t/webdav-docker`
 
 ## access
 `http://localhost/uploads`
