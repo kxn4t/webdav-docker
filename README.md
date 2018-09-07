@@ -6,8 +6,8 @@ use digest authentication.
 # Usage
 ## run
 `docker run -dit --name=webdav -v <path to location>:/usr/local/apache2/uploads -p 8080:80 kxn4t/webdav-docker`  
-non mount (temporary using)
-`docker run -dit --name=webdav -p 8080:80 kxn4t/webdav-docker`
+non mount (temporary using)  
+`docker run -dit --name=webdav -p 8080:80 kxn4t/webdav-docker`  
 
 ## access
 `http://localhost/uploads`
@@ -30,7 +30,7 @@ pass: test1234
 
 ## add user
 1. docker exec  
-`docker exec -it webdav bash`
+`docker exec -it webdav bash`  
 
 2. change httpd-dav.conf  
 `vim conf/extra/httpd-dav.conf`
@@ -52,7 +52,7 @@ example:
 `htdigest "/usr/local/apache2/user.passwd" DAV-upload <add username>`  
 
 4. restart httpd  
-`httpd -k restart`
+`httpd -k restart`  
 
 # License
 MIT
